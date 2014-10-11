@@ -32,6 +32,9 @@ bool sensfusion6Test(void);
 
 void sensfusion6UpdateQ(float gx, float gy, float gz, float ax, float ay, float az, float dt);
 void sensfusion6GetEulerRPY(float* roll, float* pitch, float* yaw);
+void sensfusion6GetQuaternion(float* rq0,float* rq1,float* rq2,float* rq3);
+void sensfusion6UpdateV(float ax, float ay, float az, float dt);
+void sensfusion6UpdateP(float dt);
 float sensfusion6GetAccZWithoutGravity(const float ax, const float ay, const float az);
 
 

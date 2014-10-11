@@ -28,6 +28,7 @@
 
 #include "sensfusion6.h"
 #include "imu.h"
+#include "log.h"
 #include "param.h"
 
 //#define MADWICK_QUATERNION_IMU
@@ -48,6 +49,14 @@
   float integralFBy = 0.0f;
   float integralFBz = 0.0f;  // integral error terms scaled by Ki
 #endif
+
+float px = 0.0f;
+float py = 0.0f;
+float pz = 0.0f;
+
+float vx = 0.0f;
+float vy = 0.0f;
+float vz = 0.0f;
 
 float q0 = 1.0f;
 float q1 = 0.0f;
@@ -229,6 +238,25 @@ void sensfusion6UpdateQ(float gx, float gy, float gz, float ax, float ay, float 
 }
 #endif
 
+void sensfusion6UpdateV(float ax, float ay, float az, float dt){
+  vx=9.81f*ax*dt;
+  vy=9.81f*ay*dt;
+  vz=9.81f*sensfusion6GetAccZWithoutGravity(ax,ay,az)*dt;
+}
+
+void sensfusion6UpdateP(float dt){
+  px=px+((q0*q0+q1*q1-q2*q2-q3*q3)*vx+(2*q0*q3+2*q1*q2)*vy+(-2*q0*q2+2*q1*q3)*vz)*dt;
+  py=py+((-2*q0*q3+2*q1*q2)*vx+(q0*q0-q1*q1+q2*q2-q3*q3)*vy+(2*q0*q1+2*q3*q2)*vz)*dt;
+  pz=pz+((2*q0*q2+2*q1*q3)*vx+(-2*q0*q1+2*q3*q2)*vy+(q0*q0-q1*q1-q2*q2+q3*q3)*vz)*dt;
+}
+
+void sensfusion6GetQuaternion(float* rq0,float* rq1,float* rq2,float* rq3){
+  *rq0=q0;
+  *rq1=q1;
+  *rq2=q2;
+  *rq3=q3;
+}
+
 void sensfusion6GetEulerRPY(float* roll, float* pitch, float* yaw)
 {
   float gx, gy, gz; // estimated gravity direction
@@ -271,7 +299,24 @@ float invSqrt(float x)
   return y;
 }
 
+LOG_GROUP_START(quaternion)
+LOG_ADD(LOG_FLOAT, q0, &q0)
+LOG_ADD(LOG_FLOAT, q1, &q1)
+LOG_ADD(LOG_FLOAT, q2, &q2)
+LOG_ADD(LOG_FLOAT, q3, &q3)
+LOG_GROUP_STOP(quaternion)
 
+LOG_GROUP_START(velocity)
+LOG_ADD(LOG_FLOAT, vx, &vx)
+LOG_ADD(LOG_FLOAT, vy, &vy)
+LOG_ADD(LOG_FLOAT, vz, &vz)
+LOG_GROUP_STOP(velocity)
+
+LOG_GROUP_START(position)
+LOG_ADD(LOG_FLOAT, px, &px)
+LOG_ADD(LOG_FLOAT, py, &py)
+LOG_ADD(LOG_FLOAT, pz, &pz)
+LOG_GROUP_STOP(position)
 
 PARAM_GROUP_START(sensorfusion6)
 #ifdef MADWICK_QUATERNION_IMU

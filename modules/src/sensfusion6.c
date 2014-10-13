@@ -239,9 +239,9 @@ void sensfusion6UpdateQ(float gx, float gy, float gz, float ax, float ay, float 
 #endif
 
 void sensfusion6UpdateV(float ax, float ay, float az, float dt){
-  vx=9.81f*ax*dt;
-  vy=9.81f*ay*dt;
-  vz=9.81f*sensfusion6GetAccZWithoutGravity(ax,ay,az)*dt;
+  vx=vx+9.81f*ax*dt;
+  vy=vy+9.81f*ay*dt;
+  vz=vz+9.81f*sensfusion6GetAccZWithoutGravity(ax,ay,az)*dt;
 }
 
 void sensfusion6UpdateP(float dt){

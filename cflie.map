@@ -8358,7 +8358,7 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
  .debug_abbrev  0x00008538       0x47 bin/abort.o
  .debug_abbrev  0x0000857f       0x9d bin/version.o
 
-.debug_line     0x00000000    0x164e7
+.debug_line     0x00000000    0x164e9
  *(.debug_line)
  .debug_line    0x00000000      0x4cc bin/list.o
  .debug_line    0x000004cc      0x882 bin/tasks.o
@@ -8409,19 +8409,19 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
  .debug_line    0x00011c13      0x544 bin/commander.o
  .debug_line    0x00012157      0x572 bin/controller.o
  .debug_line    0x000126c9      0x56f bin/sensfusion6.o
- .debug_line    0x00012c38      0x647 bin/stabilizer.o
- .debug_line    0x0001327f      0x820 bin/log.o
- .debug_line    0x00013a9f      0x4fc bin/worker.o
- .debug_line    0x00013f9b      0x369 bin/filter.o
- .debug_line    0x00014304      0x36e bin/cpuid.o
- .debug_line    0x00014672      0x3f4 bin/cfassert.o
- .debug_line    0x00014a66      0x489 bin/configblock.o
- .debug_line    0x00014eef      0x46e bin/eprintf.o
- .debug_line    0x0001535d      0x3f8 bin/crc.o
- .debug_line    0x00015755      0x38b bin/fp16.o
- .debug_line    0x00015ae0      0x333 bin/debug.o
- .debug_line    0x00015e13      0x342 bin/abort.o
- .debug_line    0x00016155      0x392 bin/version.o
+ .debug_line    0x00012c38      0x649 bin/stabilizer.o
+ .debug_line    0x00013281      0x820 bin/log.o
+ .debug_line    0x00013aa1      0x4fc bin/worker.o
+ .debug_line    0x00013f9d      0x369 bin/filter.o
+ .debug_line    0x00014306      0x36e bin/cpuid.o
+ .debug_line    0x00014674      0x3f4 bin/cfassert.o
+ .debug_line    0x00014a68      0x489 bin/configblock.o
+ .debug_line    0x00014ef1      0x46e bin/eprintf.o
+ .debug_line    0x0001535f      0x3f8 bin/crc.o
+ .debug_line    0x00015757      0x38b bin/fp16.o
+ .debug_line    0x00015ae2      0x333 bin/debug.o
+ .debug_line    0x00015e15      0x342 bin/abort.o
+ .debug_line    0x00016157      0x392 bin/version.o
 
 .debug_frame    0x00000000     0x5e24
  *(.debug_frame)

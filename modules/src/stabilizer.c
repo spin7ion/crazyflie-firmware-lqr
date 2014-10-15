@@ -204,8 +204,8 @@ static void stabilizerTask(void* param)
     if (imu6IsCalibrated())
     {
       commanderGetRPY(&q1Desired, &q2Desired, &q3Desired);
-      q1Desired=cos((q1Desired/2+90)*0.01745);
-      q2Desired=-cos((q2Desired/2+90)*0.01745);
+      q1Desired=cos((-q1Desired/2+90)*0.01745);
+      q2Desired=cos((q2Desired/2+90)*0.01745);
       q3Desired=cos((q3Desired/2+90)*0.01745);
       commanderGetRPYType(&rollType, &pitchType, &yawType);
 

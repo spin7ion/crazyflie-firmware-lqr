@@ -6003,7 +6003,7 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
  *(.flashtext)
                 0x0800290c                . = ALIGN (0x4)
 
-.text           0x08002910     0xcacc
+.text           0x08002910     0xcb2c
                 0x08002910                . = ALIGN (0x4)
  *(.text)
  .text          0x08002910      0x370 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7-m/libgcc.a(_arm_addsubdf3.o)
@@ -7147,255 +7147,255 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
                 0x0800a7d8                sensfusion6UpdateV
  .text.distributePower
                 0x0800a850       0xbc bin/stabilizer.o
+ *fill*         0x0800a90c        0x4 00
  .text.stabilizerTask
-                0x0800a90c      0x230 bin/stabilizer.o
+                0x0800a910      0x290 bin/stabilizer.o
  .text.stabilizerInit
-                0x0800ab3c       0x60 bin/stabilizer.o
-                0x0800ab3c                stabilizerInit
+                0x0800aba0       0x60 bin/stabilizer.o
+                0x0800aba0                stabilizerInit
  .text.stabilizerTest
-                0x0800ab9c       0x1e bin/stabilizer.o
-                0x0800ab9c                stabilizerTest
- *fill*         0x0800abba        0x2 00
+                0x0800ac00       0x1e bin/stabilizer.o
+                0x0800ac00                stabilizerTest
+ *fill*         0x0800ac1e        0x2 00
  .text.logStopBlock
-                0x0800abbc       0x38 bin/log.o
+                0x0800ac20       0x38 bin/log.o
  .text.logDeleteBlock
-                0x0800abf4       0x68 bin/log.o
+                0x0800ac58       0x68 bin/log.o
  .text.logReset
-                0x0800ac5c       0x5c bin/log.o
+                0x0800acc0       0x5c bin/log.o
  .text.logRunBlock
-                0x0800acb8      0x138 bin/log.o
-                0x0800acb8                logRunBlock
+                0x0800ad1c      0x138 bin/log.o
+                0x0800ad1c                logRunBlock
  .text.logBlockTimed
-                0x0800adf0       0x18 bin/log.o
-                0x0800adf0                logBlockTimed
+                0x0800ae54       0x18 bin/log.o
+                0x0800ae54                logBlockTimed
  .text.logAppendBlock.constprop.1
-                0x0800ae08      0x110 bin/log.o
- .text.logTask  0x0800af18      0x248 bin/log.o
- .text.logInit  0x0800b160       0xb8 bin/log.o
-                0x0800b160                logInit
+                0x0800ae6c      0x110 bin/log.o
+ .text.logTask  0x0800af7c      0x248 bin/log.o
+ .text.logInit  0x0800b1c4       0xb8 bin/log.o
+                0x0800b1c4                logInit
  .text.workerInit
-                0x0800b218       0x18 bin/worker.o
-                0x0800b218                workerInit
+                0x0800b27c       0x18 bin/worker.o
+                0x0800b27c                workerInit
  .text.workerTest
-                0x0800b230       0x10 bin/worker.o
-                0x0800b230                workerTest
+                0x0800b294       0x10 bin/worker.o
+                0x0800b294                workerTest
  .text.workerLoop
-                0x0800b240       0x2c bin/worker.o
-                0x0800b240                workerLoop
+                0x0800b2a4       0x2c bin/worker.o
+                0x0800b2a4                workerLoop
  .text.workerSchedule
-                0x0800b26c       0x28 bin/worker.o
-                0x0800b26c                workerSchedule
+                0x0800b2d0       0x28 bin/worker.o
+                0x0800b2d0                workerSchedule
  .text.iirLPFilterSingle
-                0x0800b294       0x2c bin/filter.o
-                0x0800b294                iirLPFilterSingle
+                0x0800b2f8       0x2c bin/filter.o
+                0x0800b2f8                iirLPFilterSingle
  .text.assertFail
-                0x0800b2c0       0x30 bin/cfassert.o
-                0x0800b2c0                assertFail
+                0x0800b324       0x30 bin/cfassert.o
+                0x0800b324                assertFail
  .text.configblockInit
-                0x0800b2f0       0x44 bin/configblock.o
-                0x0800b2f0                configblockInit
+                0x0800b354       0x44 bin/configblock.o
+                0x0800b354                configblockInit
  .text.configblockGetRadioChannel
-                0x0800b334       0x1c bin/configblock.o
-                0x0800b334                configblockGetRadioChannel
+                0x0800b398       0x1c bin/configblock.o
+                0x0800b398                configblockGetRadioChannel
  .text.configblockGetRadioSpeed
-                0x0800b350       0x18 bin/configblock.o
-                0x0800b350                configblockGetRadioSpeed
+                0x0800b3b4       0x18 bin/configblock.o
+                0x0800b3b4                configblockGetRadioSpeed
  .text.configblockGetCalibPitch
-                0x0800b368       0x1c bin/configblock.o
-                0x0800b368                configblockGetCalibPitch
+                0x0800b3cc       0x1c bin/configblock.o
+                0x0800b3cc                configblockGetCalibPitch
  .text.configblockGetCalibRoll
-                0x0800b384       0x1c bin/configblock.o
-                0x0800b384                configblockGetCalibRoll
+                0x0800b3e8       0x1c bin/configblock.o
+                0x0800b3e8                configblockGetCalibRoll
  .text.get_int_len
-                0x0800b3a0       0x14 bin/eprintf.o
-                0x0800b3a0                get_int_len
- .text.itoa     0x0800b3b4       0xa8 bin/eprintf.o
+                0x0800b404       0x14 bin/eprintf.o
+                0x0800b404                get_int_len
+ .text.itoa     0x0800b418       0xa8 bin/eprintf.o
  .text.evprintf
-                0x0800b45c      0x144 bin/eprintf.o
-                0x0800b45c                evprintf
- .text.eprintf  0x0800b5a0       0x18 bin/eprintf.o
-                0x0800b5a0                eprintf
- .text.reflect  0x0800b5b8       0x1e bin/crc.o
- *fill*         0x0800b5d6        0x2 00
- .text.crcSlow  0x0800b5d8       0x48 bin/crc.o
-                0x0800b5d8                crcSlow
+                0x0800b4c0      0x144 bin/eprintf.o
+                0x0800b4c0                evprintf
+ .text.eprintf  0x0800b604       0x18 bin/eprintf.o
+                0x0800b604                eprintf
+ .text.reflect  0x0800b61c       0x1e bin/crc.o
+ *fill*         0x0800b63a        0x2 00
+ .text.crcSlow  0x0800b63c       0x48 bin/crc.o
+                0x0800b63c                crcSlow
  .text.single2half
-                0x0800b620       0x4c bin/fp16.o
-                0x0800b620                single2half
- .text.cos      0x0800b66c       0x90 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_cos.o)
-                0x0800b66c                cos
- .text.sin      0x0800b6fc       0x98 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_sin.o)
-                0x0800b6fc                sin
- .text.asin     0x0800b794       0xa4 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_asin.o)
-                0x0800b794                asin
- .text.atan2    0x0800b838        0x4 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_atan2.o)
-                0x0800b838                atan2
- *fill*         0x0800b83c        0x4 00
+                0x0800b684       0x4c bin/fp16.o
+                0x0800b684                single2half
+ .text.cos      0x0800b6d0       0x90 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_cos.o)
+                0x0800b6d0                cos
+ .text.sin      0x0800b760       0x98 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_sin.o)
+                0x0800b760                sin
+ .text.asin     0x0800b7f8       0xa4 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_asin.o)
+                0x0800b7f8                asin
+ .text.atan2    0x0800b89c        0x4 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_atan2.o)
+                0x0800b89c                atan2
  .text.__ieee754_asin
-                0x0800b840      0x460 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_asin.o)
-                0x0800b840                __ieee754_asin
+                0x0800b8a0      0x460 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_asin.o)
+                0x0800b8a0                __ieee754_asin
  .text.__ieee754_atan2
-                0x0800bca0      0x218 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_atan2.o)
-                0x0800bca0                __ieee754_atan2
+                0x0800bd00      0x218 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_atan2.o)
+                0x0800bd00                __ieee754_atan2
  .text.__ieee754_rem_pio2
-                0x0800beb8      0x468 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_rem_pio2.o)
-                0x0800beb8                __ieee754_rem_pio2
+                0x0800bf18      0x468 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_rem_pio2.o)
+                0x0800bf18                __ieee754_rem_pio2
  .text.__ieee754_sqrt
-                0x0800c320      0x208 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_sqrt.o)
-                0x0800c320                __ieee754_sqrt
+                0x0800c380      0x208 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_sqrt.o)
+                0x0800c380                __ieee754_sqrt
  .text.__kernel_cos
-                0x0800c528      0x258 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_cos.o)
-                0x0800c528                __kernel_cos
+                0x0800c588      0x258 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_cos.o)
+                0x0800c588                __kernel_cos
  .text.__kernel_rem_pio2
-                0x0800c780      0xdfc /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_rem_pio2.o)
-                0x0800c780                __kernel_rem_pio2
- *fill*         0x0800d57c        0x4 00
+                0x0800c7e0      0xdfc /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_rem_pio2.o)
+                0x0800c7e0                __kernel_rem_pio2
+ *fill*         0x0800d5dc        0x4 00
  .text.__kernel_sin
-                0x0800d580      0x170 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_sin.o)
-                0x0800d580                __kernel_sin
- .text.atan     0x0800d6f0      0x368 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_atan.o)
-                0x0800d6f0                atan
- .text.fabs     0x0800da58        0x8 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_fabs.o)
-                0x0800da58                fabs
- .text.floor    0x0800da60      0x110 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_floor.o)
-                0x0800da60                floor
+                0x0800d5e0      0x170 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_sin.o)
+                0x0800d5e0                __kernel_sin
+ .text.atan     0x0800d750      0x368 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_atan.o)
+                0x0800d750                atan
+ .text.fabs     0x0800dab8        0x8 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_fabs.o)
+                0x0800dab8                fabs
+ .text.floor    0x0800dac0      0x110 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_floor.o)
+                0x0800dac0                floor
  .text.__fpclassifyd
-                0x0800db70       0x68 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_fpclassify.o)
-                0x0800db70                __fpclassifyd
- .text.matherr  0x0800dbd8        0x4 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_matherr.o)
-                0x0800dbd8                matherr
- .text.nan      0x0800dbdc        0xc /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_nan.o)
-                0x0800dbdc                nan
- .text.scalbn   0x0800dbe8      0x108 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_scalbn.o)
-                0x0800dbe8                scalbn
+                0x0800dbd0       0x68 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_fpclassify.o)
+                0x0800dbd0                __fpclassifyd
+ .text.matherr  0x0800dc38        0x4 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_matherr.o)
+                0x0800dc38                matherr
+ .text.nan      0x0800dc3c        0xc /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_nan.o)
+                0x0800dc3c                nan
+ .text.scalbn   0x0800dc48      0x108 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_scalbn.o)
+                0x0800dc48                scalbn
  .text.copysign
-                0x0800dcf0       0x18 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_copysign.o)
-                0x0800dcf0                copysign
- .text.memcpy   0x0800dd08      0x15c /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memcpy.o)
-                0x0800dd08                memcpy
- .text.memset   0x0800de64      0x12c /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
-                0x0800de64                memset
- .text.strlen   0x0800df90       0x60 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
-                0x0800df90                strlen
- .text.strncpy  0x0800dff0      0x10c /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncpy.o)
-                0x0800dff0                strncpy
- *fill*         0x0800e0fc        0x4 00
+                0x0800dd50       0x18 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_copysign.o)
+                0x0800dd50                copysign
+ .text.memcpy   0x0800dd68      0x15c /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memcpy.o)
+                0x0800dd68                memcpy
+ .text.memset   0x0800dec4      0x12c /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-memset.o)
+                0x0800dec4                memset
+ .text.strlen   0x0800dff0       0x60 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
+                0x0800dff0                strlen
+ .text.strncpy  0x0800e050      0x10c /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncpy.o)
+                0x0800e050                strncpy
+ *fill*         0x0800e15c        0x4 00
  .text.strncpy.stub
-                0x0800e100        0x8 linker stubs
+                0x0800e160        0x8 linker stubs
  *(.rodata)
- .rodata        0x0800e108        0x5 bin/radiolink.o
+ .rodata        0x0800e168        0x5 bin/radiolink.o
  *(.rodata*)
  .rodata.str1.1
-                0x0800e10d        0x5 bin/tasks.o
+                0x0800e16d        0x5 bin/tasks.o
  .rodata.str1.1
-                0x0800e112        0x8 bin/timers.o
- *fill*         0x0800e11a        0x2 00
+                0x0800e172        0x8 bin/timers.o
+ *fill*         0x0800e17a        0x2 00
  .rodata.led_polarity
-                0x0800e11c        0x8 bin/led.o
+                0x0800e17c        0x8 bin/led.o
  .rodata.led_pin
-                0x0800e124        0x8 bin/led.o
+                0x0800e184        0x8 bin/led.o
  .rodata.led_port
-                0x0800e12c        0x8 bin/led.o
+                0x0800e18c        0x8 bin/led.o
  .rodata.str1.1
-                0x0800e134        0x4 bin/adc.o
+                0x0800e194        0x4 bin/adc.o
  .rodata.str1.1
-                0x0800e138       0x1e bin/nrf24l01.o
+                0x0800e198       0x1e bin/nrf24l01.o
  .rodata.str1.1
-                0x0800e156       0x97 bin/nvic.o
- *fill*         0x0800e1ed        0x3 00
+                0x0800e1b6       0x97 bin/nvic.o
+ *fill*         0x0800e24d        0x3 00
  .rodata.MOTORS
-                0x0800e1f0       0x10 bin/motors.o
-                0x0800e1f0                MOTORS
+                0x0800e250       0x10 bin/motors.o
+                0x0800e250                MOTORS
  .rodata.CSWTCH.539
-                0x0800e200       0x10 bin/mpu6050.o
+                0x0800e260       0x10 bin/mpu6050.o
  .rodata.str1.1
-                0x0800e210       0x89 bin/mpu6050.o
- *fill*         0x0800e299        0x3 00
+                0x0800e270       0x89 bin/mpu6050.o
+ *fill*         0x0800e2f9        0x3 00
  .rodata.CSWTCH.553
-                0x0800e29c       0x10 bin/mpu6050.o
+                0x0800e2fc       0x10 bin/mpu6050.o
  .rodata.str1.1
-                0x0800e2ac       0x7f bin/hmc5883l.o
+                0x0800e30c       0x7f bin/hmc5883l.o
  .rodata.str1.1
-                0x0800e32b       0x75 bin/ms5611.o
+                0x0800e38b       0x75 bin/ms5611.o
  .rodata.str1.1
-                0x0800e3a0       0x49 bin/crtp.o
+                0x0800e400       0x49 bin/crtp.o
                                  0x4b (size before relaxing)
- *fill*         0x0800e3e9        0x3 00
+ *fill*         0x0800e449        0x3 00
  .rodata.sequences
-                0x0800e3ec       0x28 bin/ledseq.o
+                0x0800e44c       0x28 bin/ledseq.o
  .rodata.str1.1
-                0x0800e414        0xc bin/ledseq.o
+                0x0800e474        0xc bin/ledseq.o
  .rodata.str1.1
-                0x0800e420       0x12 bin/freeRTOSdebug.o
+                0x0800e480       0x12 bin/freeRTOSdebug.o
  .rodata.str1.1
-                0x0800e432      0x164 bin/imu.o
+                0x0800e492      0x164 bin/imu.o
                                 0x186 (size before relaxing)
- *fill*         0x0800e596        0x2 00
+ *fill*         0x0800e5f6        0x2 00
  .rodata.bat671723HS25C
-                0x0800e598       0x28 bin/pm.o
+                0x0800e5f8       0x28 bin/pm.o
  .rodata.str1.1
-                0x0800e5c0       0x1b bin/pm.o
+                0x0800e620       0x1b bin/pm.o
                                  0x1e (size before relaxing)
  .rodata.str1.1
-                0x0800e5db        0xa bin/radiolink.o
+                0x0800e63b        0xa bin/radiolink.o
  .rodata.str1.1
-                0x0800e5e5       0xac bin/system.o
+                0x0800e645       0xac bin/system.o
                                  0xb4 (size before relaxing)
  .rodata.str1.1
-                0x0800e691        0x6 bin/param.o
+                0x0800e6f1        0x6 bin/param.o
                                   0x7 (size before relaxing)
  .rodata.str1.1
-                0x0800e697       0x18 bin/commander.o
+                0x0800e6f7       0x18 bin/commander.o
                                  0x23 (size before relaxing)
  .rodata.str1.1
-                0x0800e6af       0x68 bin/controller.o
+                0x0800e70f       0x68 bin/controller.o
                                  0x7e (size before relaxing)
  .rodata.str1.1
-                0x0800e717       0x5d bin/sensfusion6.o
+                0x0800e777       0x5d bin/sensfusion6.o
                                  0x8e (size before relaxing)
  .rodata.str1.1
-                0x0800e774      0x196 bin/stabilizer.o
+                0x0800e7d4      0x196 bin/stabilizer.o
                                 0x1e8 (size before relaxing)
  .rodata.str1.1
-                0x0800e90a       0x2f bin/log.o
+                0x0800e96a       0x2f bin/log.o
                                  0x30 (size before relaxing)
  .rodata.typeLength
-                0x0800e939        0x9 bin/log.o
+                0x0800e999        0x9 bin/log.o
  .rodata.str1.1
-                0x0800e942       0x28 bin/cfassert.o
- .rodata.digit  0x0800e96a       0x10 bin/eprintf.o
+                0x0800e9a2       0x28 bin/cfassert.o
+ .rodata.digit  0x0800e9ca       0x10 bin/eprintf.o
  .rodata.V_MODIFIED
-                0x0800e97a        0x1 bin/version.o
-                0x0800e97a                V_MODIFIED
+                0x0800e9da        0x1 bin/version.o
+                0x0800e9da                V_MODIFIED
  .rodata.str1.1
-                0x0800e97b       0x5a bin/version.o
+                0x0800e9db       0x5a bin/version.o
                                  0x63 (size before relaxing)
- *fill*         0x0800e9d5        0x3 00
+ *fill*         0x0800ea35        0x3 00
  .rodata.V_REVISION_0
-                0x0800e9d8        0x4 bin/version.o
-                0x0800e9d8                V_REVISION_0
+                0x0800ea38        0x4 bin/version.o
+                0x0800ea38                V_REVISION_0
  .rodata.V_REVISION_1
-                0x0800e9dc        0x2 bin/version.o
-                0x0800e9dc                V_REVISION_1
- *fill*         0x0800e9de        0x2 00
+                0x0800ea3c        0x2 bin/version.o
+                0x0800ea3c                V_REVISION_1
+ *fill*         0x0800ea3e        0x2 00
  .rodata.str1.4
-                0x0800e9e0        0x8 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_asin.o)
+                0x0800ea40        0x8 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-w_asin.o)
                                   0xc (size before relaxing)
  .rodata.npio2_hw
-                0x0800e9e8       0x80 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_rem_pio2.o)
+                0x0800ea48       0x80 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_rem_pio2.o)
  .rodata.two_over_pi
-                0x0800ea68      0x108 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_rem_pio2.o)
+                0x0800eac8      0x108 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_rem_pio2.o)
  .rodata.init_jk
-                0x0800eb70       0x10 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_rem_pio2.o)
- *fill*         0x0800eb80        0x0 00
- .rodata.PIo2   0x0800eb80       0x40 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_rem_pio2.o)
+                0x0800ebd0       0x10 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_rem_pio2.o)
+ *fill*         0x0800ebe0        0x0 00
+ .rodata.PIo2   0x0800ebe0       0x40 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-k_rem_pio2.o)
  .rodata.atanlo
-                0x0800ebc0       0x20 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_atan.o)
+                0x0800ec20       0x20 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_atan.o)
  .rodata.atanhi
-                0x0800ebe0       0x20 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_atan.o)
+                0x0800ec40       0x20 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_atan.o)
  .rodata._ctype_
-                0x0800ec00      0x104 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-ctype_.o)
-                0x0800ec00                _ctype_
+                0x0800ec60      0x104 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-ctype_.o)
+                0x0800ec60                _ctype_
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
@@ -7408,62 +7408,62 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
  *(.init)
  *(.fini)
  *(.eh_frame)
-                0x0800ed04                . = ALIGN (0x4)
-                0x0800ed04                _param_start = .
+                0x0800ed64                . = ALIGN (0x4)
+                0x0800ed64                _param_start = .
  *(.param)
  *(.param.*)
  .param.imu_tests
-                0x0800ed04       0x3c bin/imu.o
+                0x0800ed64       0x3c bin/imu.o
  .param.imu_sensors
-                0x0800ed40       0x30 bin/imu.o
+                0x0800eda0       0x30 bin/imu.o
  .param.imu_acc_lpf
-                0x0800ed70       0x24 bin/imu.o
- .param.cpu     0x0800ed94       0x48 bin/system.o
+                0x0800edd0       0x24 bin/imu.o
+ .param.cpu     0x0800edf4       0x48 bin/system.o
  .param.flightmode
-                0x0800eddc       0x24 bin/commander.o
+                0x0800ee3c       0x24 bin/commander.o
  .param.pid_rate
-                0x0800ee00       0x84 bin/controller.o
+                0x0800ee60       0x84 bin/controller.o
  .param.pid_attitude
-                0x0800ee84       0x84 bin/controller.o
+                0x0800eee4       0x84 bin/controller.o
  .param.sensorfusion6
-                0x0800ef08       0x30 bin/sensfusion6.o
+                0x0800ef68       0x30 bin/sensfusion6.o
  .param.altHold
-                0x0800ef38       0xfc bin/stabilizer.o
+                0x0800ef98       0xfc bin/stabilizer.o
  .param.firmware
-                0x0800f034       0x3c bin/version.o
-                0x0800f070                _param_stop = .
-                0x0800f070                . = ALIGN (0x4)
-                0x0800f070                _log_start = .
+                0x0800f094       0x3c bin/version.o
+                0x0800f0d0                _param_stop = .
+                0x0800f0d0                . = ALIGN (0x4)
+                0x0800f0d0                _log_start = .
  *(.log)
  *(.log.*)
- .log.pm        0x0800f070       0x30 bin/pm.o
- .log.sys       0x0800f0a0       0x24 bin/system.o
- .log.velocity  0x0800f0c4       0x3c bin/sensfusion6.o
- .log.position  0x0800f100       0x3c bin/sensfusion6.o
+ .log.pm        0x0800f0d0       0x30 bin/pm.o
+ .log.sys       0x0800f100       0x24 bin/system.o
+ .log.velocity  0x0800f124       0x3c bin/sensfusion6.o
+ .log.position  0x0800f160       0x3c bin/sensfusion6.o
  .log.quaternion
-                0x0800f13c       0x48 bin/sensfusion6.o
- .log.baro      0x0800f184       0x54 bin/stabilizer.o
- .log.motor     0x0800f1d8       0x48 bin/stabilizer.o
- .log.altHold   0x0800f220       0x60 bin/stabilizer.o
- .log.gyro      0x0800f280       0x3c bin/stabilizer.o
- .log.acc       0x0800f2bc       0x54 bin/stabilizer.o
+                0x0800f19c       0x48 bin/sensfusion6.o
+ .log.baro      0x0800f1e4       0x54 bin/stabilizer.o
+ .log.motor     0x0800f238       0x48 bin/stabilizer.o
+ .log.altHold   0x0800f280       0x60 bin/stabilizer.o
+ .log.gyro      0x0800f2e0       0x3c bin/stabilizer.o
+ .log.acc       0x0800f31c       0x54 bin/stabilizer.o
  .log.stabilizer
-                0x0800f310       0x48 bin/stabilizer.o
- .log.vpid      0x0800f358       0x48 bin/stabilizer.o
- .log.mag       0x0800f3a0       0x3c bin/stabilizer.o
-                0x0800f3dc                _log_stop = .
-                0x0800f3dc                . = ALIGN (0x4)
-                0x0800f3dc                _etext = .
+                0x0800f370       0x48 bin/stabilizer.o
+ .log.vpid      0x0800f3b8       0x48 bin/stabilizer.o
+ .log.mag       0x0800f400       0x3c bin/stabilizer.o
+                0x0800f43c                _log_stop = .
+                0x0800f43c                . = ALIGN (0x4)
+                0x0800f43c                _etext = .
 
-.libc           0x0800f3dc        0x8
-                0x0800f3dc                . = ALIGN (0x4)
+.libc           0x0800f43c        0x8
+                0x0800f43c                . = ALIGN (0x4)
  *(.ARM.exidx*)
- .ARM.exidx     0x0800f3dc        0x8 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7-m/libgcc.a(_divdi3.o)
- .ARM.exidx     0x0800f3e4        0x0 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7-m/libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x0800f43c        0x8 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7-m/libgcc.a(_divdi3.o)
+ .ARM.exidx     0x0800f444        0x0 /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7-m/libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x0800f3e4                . = ALIGN (0x4)
-                0x0800f3e4                _elibc = .
-                0x0800f3e4                _sidata = _elibc
+                0x0800f444                . = ALIGN (0x4)
+                0x0800f444                _elibc = .
+                0x0800f444                _sidata = _elibc
 
 .flashpatch     0x00000000        0x0
                 0x00000000                . = ALIGN (0x4)
@@ -7475,7 +7475,7 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
  *(.endflash)
                 0x00000000                . = ALIGN (0x4)
 
-.data           0x20000000      0x1f8 load address 0x0800f3e4
+.data           0x20000000      0x1f8 load address 0x0800f444
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -7588,7 +7588,7 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
                 0x200001f8                . = ALIGN (0x4)
                 0x200001f8                _edata = .
 
-.bss            0x200001f8     0x4b80 load address 0x0800f5dc
+.bss            0x200001f8     0x4b80 load address 0x0800f63c
                 0x200001f8                . = ALIGN (0x4)
                 0x200001f8                _sbss = .
  *(.bss)
@@ -7959,7 +7959,7 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
                 0x20004d78                PROVIDE (end, _ebss)
                 0x20004d78                PROVIDE (_end, _ebss)
 
-._usrstack      0x20004d78      0x100 load address 0x0801415c
+._usrstack      0x20004d78      0x100 load address 0x080141bc
                 0x20004d78                . = ALIGN (0x4)
                 0x20004d78                _susrstack = .
                 0x20004e78                . = (. + _Minimum_Stack_Size)
@@ -8228,7 +8228,7 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x262fd
+.debug_info     0x00000000    0x26330
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x2bb bin/list.o
  .debug_info    0x000002bb     0x1346 bin/tasks.o
@@ -8279,21 +8279,21 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
  .debug_info    0x000217a9      0x5f4 bin/commander.o
  .debug_info    0x00021d9d      0x9ce bin/controller.o
  .debug_info    0x0002276b      0x702 bin/sensfusion6.o
- .debug_info    0x00022e6d      0xed5 bin/stabilizer.o
- .debug_info    0x00023d42     0x1243 bin/log.o
- .debug_info    0x00024f85      0x25f bin/worker.o
- .debug_info    0x000251e4      0x118 bin/filter.o
- .debug_info    0x000252fc       0xb1 bin/cpuid.o
- .debug_info    0x000253ad      0x1a1 bin/cfassert.o
- .debug_info    0x0002554e      0x252 bin/configblock.o
- .debug_info    0x000257a0      0x4d3 bin/eprintf.o
- .debug_info    0x00025c73      0x29e bin/crc.o
- .debug_info    0x00025f11      0x140 bin/fp16.o
- .debug_info    0x00026051       0x6f bin/debug.o
- .debug_info    0x000260c0       0x90 bin/abort.o
- .debug_info    0x00026150      0x1ad bin/version.o
+ .debug_info    0x00022e6d      0xf08 bin/stabilizer.o
+ .debug_info    0x00023d75     0x1243 bin/log.o
+ .debug_info    0x00024fb8      0x25f bin/worker.o
+ .debug_info    0x00025217      0x118 bin/filter.o
+ .debug_info    0x0002532f       0xb1 bin/cpuid.o
+ .debug_info    0x000253e0      0x1a1 bin/cfassert.o
+ .debug_info    0x00025581      0x252 bin/configblock.o
+ .debug_info    0x000257d3      0x4d3 bin/eprintf.o
+ .debug_info    0x00025ca6      0x29e bin/crc.o
+ .debug_info    0x00025f44      0x140 bin/fp16.o
+ .debug_info    0x00026084       0x6f bin/debug.o
+ .debug_info    0x000260f3       0x90 bin/abort.o
+ .debug_info    0x00026183      0x1ad bin/version.o
 
-.debug_abbrev   0x00000000     0x8607
+.debug_abbrev   0x00000000     0x861c
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0xfb bin/list.o
  .debug_abbrev  0x000000fb      0x361 bin/tasks.o
@@ -8344,21 +8344,21 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
  .debug_abbrev  0x00006da5      0x285 bin/commander.o
  .debug_abbrev  0x0000702a      0x1eb bin/controller.o
  .debug_abbrev  0x00007215      0x2c0 bin/sensfusion6.o
- .debug_abbrev  0x000074d5      0x2be bin/stabilizer.o
- .debug_abbrev  0x00007793      0x4da bin/log.o
- .debug_abbrev  0x00007c6d      0x152 bin/worker.o
- .debug_abbrev  0x00007dbf       0x9d bin/filter.o
- .debug_abbrev  0x00007e5c       0x50 bin/cpuid.o
- .debug_abbrev  0x00007eac       0xf4 bin/cfassert.o
- .debug_abbrev  0x00007fa0      0x125 bin/configblock.o
- .debug_abbrev  0x000080c5      0x27b bin/eprintf.o
- .debug_abbrev  0x00008340      0x11b bin/crc.o
- .debug_abbrev  0x0000845b       0x9f bin/fp16.o
- .debug_abbrev  0x000084fa       0x29 bin/debug.o
- .debug_abbrev  0x00008523       0x47 bin/abort.o
- .debug_abbrev  0x0000856a       0x9d bin/version.o
+ .debug_abbrev  0x000074d5      0x2d3 bin/stabilizer.o
+ .debug_abbrev  0x000077a8      0x4da bin/log.o
+ .debug_abbrev  0x00007c82      0x152 bin/worker.o
+ .debug_abbrev  0x00007dd4       0x9d bin/filter.o
+ .debug_abbrev  0x00007e71       0x50 bin/cpuid.o
+ .debug_abbrev  0x00007ec1       0xf4 bin/cfassert.o
+ .debug_abbrev  0x00007fb5      0x125 bin/configblock.o
+ .debug_abbrev  0x000080da      0x27b bin/eprintf.o
+ .debug_abbrev  0x00008355      0x11b bin/crc.o
+ .debug_abbrev  0x00008470       0x9f bin/fp16.o
+ .debug_abbrev  0x0000850f       0x29 bin/debug.o
+ .debug_abbrev  0x00008538       0x47 bin/abort.o
+ .debug_abbrev  0x0000857f       0x9d bin/version.o
 
-.debug_line     0x00000000    0x164e4
+.debug_line     0x00000000    0x164e7
  *(.debug_line)
  .debug_line    0x00000000      0x4cc bin/list.o
  .debug_line    0x000004cc      0x882 bin/tasks.o
@@ -8409,19 +8409,19 @@ LOAD /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi
  .debug_line    0x00011c13      0x544 bin/commander.o
  .debug_line    0x00012157      0x572 bin/controller.o
  .debug_line    0x000126c9      0x56f bin/sensfusion6.o
- .debug_line    0x00012c38      0x644 bin/stabilizer.o
- .debug_line    0x0001327c      0x820 bin/log.o
- .debug_line    0x00013a9c      0x4fc bin/worker.o
- .debug_line    0x00013f98      0x369 bin/filter.o
- .debug_line    0x00014301      0x36e bin/cpuid.o
- .debug_line    0x0001466f      0x3f4 bin/cfassert.o
- .debug_line    0x00014a63      0x489 bin/configblock.o
- .debug_line    0x00014eec      0x46e bin/eprintf.o
- .debug_line    0x0001535a      0x3f8 bin/crc.o
- .debug_line    0x00015752      0x38b bin/fp16.o
- .debug_line    0x00015add      0x333 bin/debug.o
- .debug_line    0x00015e10      0x342 bin/abort.o
- .debug_line    0x00016152      0x392 bin/version.o
+ .debug_line    0x00012c38      0x647 bin/stabilizer.o
+ .debug_line    0x0001327f      0x820 bin/log.o
+ .debug_line    0x00013a9f      0x4fc bin/worker.o
+ .debug_line    0x00013f9b      0x369 bin/filter.o
+ .debug_line    0x00014304      0x36e bin/cpuid.o
+ .debug_line    0x00014672      0x3f4 bin/cfassert.o
+ .debug_line    0x00014a66      0x489 bin/configblock.o
+ .debug_line    0x00014eef      0x46e bin/eprintf.o
+ .debug_line    0x0001535d      0x3f8 bin/crc.o
+ .debug_line    0x00015755      0x38b bin/fp16.o
+ .debug_line    0x00015ae0      0x333 bin/debug.o
+ .debug_line    0x00015e13      0x342 bin/abort.o
+ .debug_line    0x00016155      0x392 bin/version.o
 
 .debug_frame    0x00000000     0x5e24
  *(.debug_frame)
@@ -9717,6 +9717,7 @@ __aeabi_cfcmple                                   /home/spin7ion/bin/../lib/gcc/
 __aeabi_cfrcmple                                  /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7-m/libgcc.a(_arm_cmpsf2.o)
 __aeabi_d2f                                       /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7-m/libgcc.a(_arm_truncdfsf2.o)
                                                   bin/eprintf.o
+                                                  bin/stabilizer.o
                                                   bin/sensfusion6.o
                                                   bin/commander.o
                                                   bin/eskylink.o
@@ -9827,6 +9828,7 @@ __aeabi_f2iz                                      /home/spin7ion/bin/../lib/gcc/
                                                   bin/controller.o
                                                   bin/imu.o
 __aeabi_fadd                                      /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7-m/libgcc.a(_arm_addsubsf3.o)
+                                                  bin/stabilizer.o
                                                   bin/sensfusion6.o
                                                   bin/controller.o
                                                   bin/pid.o
@@ -9853,7 +9855,6 @@ __aeabi_fcmplt                                    /home/spin7ion/bin/../lib/gcc/
                                                   bin/ms5611.o
                                                   bin/mpu6050.o
 __aeabi_fdiv                                      /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7-m/libgcc.a(_arm_muldivsf3.o)
-                                                  bin/stabilizer.o
                                                   bin/pid.o
                                                   bin/imu.o
                                                   bin/ms5611.o
@@ -10071,6 +10072,7 @@ controllerTest                                    bin/controller.o
 copysign                                          /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_copysign.o)
                                                   /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_scalbn.o)
 cos                                               /home/spin7ion/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_cos.o)
+                                                  bin/stabilizer.o
                                                   bin/imu.o
 cpuIdGetFlashSize                                 bin/cpuid.o
 cpuidGetId                                        bin/cpuid.o
